@@ -2,10 +2,9 @@
 
 <h2> {{ $car->manifacturer}} {{ $car->engine }}</h2>
 <div>
-  <span>Type: </span>
+  <span>TYPE: </span>
   @foreach ($car->tags as $tag)
-    <span>{{$tag->name}}</span>
-    <br>
+    <span>{{$tag->name}} / </span>
   @endforeach
 </div>
 <ul>

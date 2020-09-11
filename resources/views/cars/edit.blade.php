@@ -34,7 +34,7 @@
     <span>Type:</span>
     @foreach ($tags as $tag)
       <div>
-        <input type="checkbox" name="tags[] {{ ($car->tags->contains($tag)) ? 'checked' : '' }}" value="{{$tag->id}}">
+        <input type="checkbox" name="tags[]" {{ ($car->tags->contains($tag)) ? 'checked' : '' }} value="{{$tag->id}}">
         <label>{{$tag->name}}</label>
       </div>
     @endforeach
